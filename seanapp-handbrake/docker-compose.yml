@@ -1,0 +1,12 @@
+version: '3'
+services:
+  handbrake:
+    image: jlesage/handbrake
+    ports:
+      - "5800:5800"
+    volumes:
+      - "${APP_DATA_DIR}/HandBrake/config:/config:rw"
+      - "${APP_DATA_DIR}/HandBrake/:/storage:ro"
+      - "${APP_DATA_DIR}/HandBrake/watch:/watch:rw"
+      - "${APP_DATA_DIR}/HandBrake/watch2:/watch2"
+      - "${APP_DATA_DIR}/HandBrake/output:/output:rw"
