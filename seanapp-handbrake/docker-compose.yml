@@ -1,5 +1,9 @@
 version: '3'
 services:
+  app_proxy:
+    enviroment:
+      APP_HOST: seanapp-handbrake_server_1
+      APP_PORT: 5800
   handbrake:
     image: jlesage/handbrake
     ports:
