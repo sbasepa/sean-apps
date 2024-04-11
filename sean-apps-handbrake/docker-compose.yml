@@ -2,7 +2,7 @@ version: "3"
 services:
   app_proxy:
     environment:
-      APP_HOST: seanapp-handbrake_server_1
+      APP_HOST: sean-apps-handbrake_server_1
       APP_PORT: 5800
     
   server:
