@@ -10,11 +10,11 @@ services:
     ports:
       - "5800:5800"
     volumes:
-      - "${APP_DATA_DIR}/HandBrake/config:/config:rw"
-      - "${APP_DATA_DIR}/HandBrake/:/storage:ro"
-      - "${APP_DATA_DIR}/HandBrake/watch:/watch:rw"
-      - "${APP_DATA_DIR}/HandBrake/watch2:/watch2"
-      - "${APP_DATA_DIR}/HandBrake/output:/output:rw"
+      - "/mnt/storage/umbrel-docker/data/appdata/HandBrake/config:/config:rw"
+      - "/mnt/storage/umbrel-docker/data/appdata/HandBrake/:/storage:ro"
+      - "/mnt/storage/umbrel-docker/data/appdata/HandBrake/watch:/watch:rw"
+      - "/mnt/storage/umbrel-docker/data/appdata/HandBrake/watch2:/watch2"
+      - "/mnt/storage/umbrel-docker/data/appdata/HandBrake/output:/output:rw"
     environment:
       - UMASK=000
       - PGID=1000
